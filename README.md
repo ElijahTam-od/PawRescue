@@ -13,7 +13,7 @@ A website designed to view and contact available pets ready for adoption.<br />
 **Displayed Dog List** - Displays real time information about the dogs and their availability.<br />
 **Admin Permissions** - Admin flagged accounts will have permissions to add, edit, create, and delete dogs in the records.<br />
 
-## Sample
+## Preview
 **Home**<br />
  ![Home](https://github.com/ElijahTam-od/PawRescue/assets/163732378/d43abbc4-a7eb-4321-acec-9c22395527a5)
 <br />
