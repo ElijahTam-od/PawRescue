@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+
+<div class="main-body">
+
+<br/>
+<br/>
+<br/>
+
+<!-- if current user is admin -->
+<form *ngIf="userType === 'admin'">
+    <div class="request-box">
+        <label for="requests">Requests:</label>
+        <!-- Use ng-container to avoid extra markup and check if the request is not an empty string -->
+
+        <ng-container *ngFor="let user of users">
+            <!-- Render the paragraph only if user.request is not an empty string -->
+            <div *ngIf="user.request.trim().length > 0" class="request-container">
+                <div class="request-title">
+                    <h3>Request Form</h3>
+                </div>
+                <div class="request-content">
+                    <div class="request-information">
+                        <h4>User:</h4>
+                        <p>{{ user.request.split(':')[0] }}</p>
+
+                        <h4>Dog:</h4>
+                        <p>{{ user.request.split(':')[1] }}</p> <!-- Add this line to check the value of user.request -->
+                        
+                    </div>
+                    
+                    <div class="request-images">
+                        <img src="../../../assets/person.png" alt="Person Image" class="person-image">
+                        <img src="../../../assets/arrow.png" alt="Arrow Image" class="arrow-image">
+
+                        <img [src]="getDogImage(user.request)" alt="Dog Image" class="dog-request-image">
+                    </div>
+                </div>
+            </div>
+            
+        </ng-container>
+
+    </div>
+</form>
+
+<!-- if current user is admin -->
+<a href = "/add"*ngIf="userType === 'admin'"><button type="button" class="add-dog" title="add-dog" >Add New Dog</button></a>
+
+
+<!-- regular content -->
+<div *ngFor="let dog of dogs" class="dog-post">
+    <div class="dog-pic-container">
+        <img src="{{dog.imgURL}}" alt="Dog Image" class="dog-image">
+    </div>
+    
+    <div class="dog-right-section">
+        <div class="top-section">
+
+            <div class="top-divide">
+                <h1>{{dog.name}}</h1>
+            </div>
+
+            <div class="bottom-divide">
+                <div class="dog-headers">
+                    <p>Breed</p>
+                    <p>Age</p>
+                    <p>Status</p>
+                </div>
+
+                <div class="dog-information">
+                    <p>{{dog.breed}}</p>
+                    <p>{{dog.age}}</p>
+                    <p>{{dog.status}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-section">
+            <a href="/dog/{{dog.id}}"*ngIf="userType === 'admin'"><button type="button" class="show-dog" title="show-dog" >Update</button></a>
+            <a href="/details/{{dog.id}}" *ngIf="userType === 'user'"><button type="button" class="show-dog" title="show-dog" (click) ="localDogId(dog)" class="details-btn">Details</button></a>
+            <button *ngIf="userType === 'admin'" type="button" class="delete" title="delete dog" (click)="delete(dog)" class="remove-btn">Remove</button>
+        </div>
+    </div>
+
+    
+
+
+    
+
+</div>
+</div>
