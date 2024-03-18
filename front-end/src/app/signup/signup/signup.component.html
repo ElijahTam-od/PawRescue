@@ -1,0 +1,29 @@
+<body>
+<app-navbar></app-navbar>
+
+    <div class="signup-container">
+
+        <h1>Sign Up</h1>
+
+        <!-- Display error message -->
+        <div *ngIf="errorMessage" class="error">
+          {{ errorMessage }}
+        </div>
+
+        <form (ngSubmit)="add(username.value, password.value, 'user')" name="signupForm">
+            <div class="form-group">
+                <input type="text" placeholder="Username" required name="username" #username/>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required name="password" #password />
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Already have an account? <a href="/login" class="login-link">Login</a></p>
+        </div>
+
+    </div>
+</body>
+  

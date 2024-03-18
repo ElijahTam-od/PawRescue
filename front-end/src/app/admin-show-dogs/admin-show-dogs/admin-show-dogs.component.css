@@ -1,0 +1,201 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  background-image: url('../../../assets/login-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005699;
+}
+
+h1 {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0px;
+  font-size: 38px;
+  margin-bottom: 0px;
+}
+
+.dog-post {
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+
+  width: 900px;
+
+  font-family: 'Arial', sans-serif;
+
+  display: flex;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #EDA10C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff4d3a;
+}
+
+.remove-btn, .details-btn{
+  margin-left: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.admin-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dog-image {
+  max-width: 400px;
+
+  max-height: 250px;
+}
+
+.dog-right-section{
+  min-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.bottom-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.bottom-divide{
+  display: flex;
+}
+
+
+
+.bottom-divide div:first-child{
+  width: 20%;
+}
+
+.bottom-divide div:nth-child(2){
+  width: 80%;
+}
+
+
+
+.main-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+
+/* REQUESTS */
+.request-container{
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+
+  width: 900px;
+
+  font-family: 'Arial', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+
+.request-container h4{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.request-container p{
+  margin-top: 5px;
+}
+
+.request-content{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.request-images{
+  display: flex;
+  align-items: center;
+}
+
+.person-image{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.arrow-image{
+  max-width: 90px;
+  max-height: 90px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.dog-request-image{
+  max-width: 200px;
+}
+
+.request-box label{
+  font-family: 'Arial', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+}
