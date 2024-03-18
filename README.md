@@ -14,14 +14,14 @@ A website designed to view and contact available pets ready for adoption.<br />
 **Admin Permissions** - Admin flagged accounts will have permissions to add, edit, create, and delete dogs in the records.<br />
 
 ## Sample
-**Login**<br />
-![Login](https://github.com/ElijahTam-od/PetCare/assets/163732378/b36e1496-9a15-494b-a03e-d97ccd6f108e) <br />
-
-**Dashboard**<br />
-![Dashboard](https://github.com/ElijahTam-od/PetCare/assets/163732378/34a8f0fb-4081-4001-bc64-f3aa8c96bf75) <br />
+**Home**<br />
+ ![Home](https://github.com/ElijahTam-od/PawRescue/assets/163732378/d43abbc4-a7eb-4321-acec-9c22395527a5)
+<br />
 
 **Dog List** <br />
-![DogList](https://github.com/ElijahTam-od/PetCare/assets/163732378/f139c75e-56f9-415f-a932-a7013792563e) <br />
+ ![DogList](https://github.com/ElijahTam-od/PawRescue/assets/163732378/a1700e47-c27c-472e-a215-15f811856030)
+<br />
 
-**Edit Dog** <br />
-![EditDog](https://github.com/ElijahTam-od/PetCare/assets/163732378/ad327c51-5118-4585-ab28-f9e98c2db35f) <br />
+**Add Dog** <br />
+![AddDog](https://github.com/ElijahTam-od/PawRescue/assets/163732378/5cb4b900-3f37-4c62-811b-c19e399689bd)
+<br />
